@@ -19,7 +19,7 @@ FinIntel Sentinel AI receives alerts from the `finrisk_detection_engine` and aut
 ---
 
 ## Agent Architecture
-
+```
 Alert Input
     │
     ▼
@@ -33,7 +33,7 @@ Summarization Agent  ──→  generates SAR narrative and risk summary
     │
     ▼
 SAR Report Output
-
+```
 ---
 
 ## RAG Pipeline
@@ -59,7 +59,7 @@ SAR Report Output
 ---
 
 ## Folder Structure
-
+```
 finintel_sentinel_ai/
 ├── src/
 │   ├── agents/              # investigation, compliance, summarization agents
@@ -75,7 +75,7 @@ finintel_sentinel_ai/
 ├── notebooks/
 ├── tests/
 └── README.md
-
+```
 ---
 
 ## Status
@@ -128,7 +128,7 @@ Step 2 — Click into the finintel_sentinel_ai folder (if it exists) OR if it do
 ---
 
 ## Agent Architecture
-
+```
 Alert Input
     │
     ▼
@@ -142,7 +142,7 @@ Summarization Agent  ──→  generates SAR narrative and risk summary
     │
     ▼
 SAR Report Output
-
+```
 ---
 
 ## RAG Pipeline
@@ -168,7 +168,7 @@ SAR Report Output
 ---
 
 ## Folder Structure
-
+```
 finintel_sentinel_ai/
 ├── src/
 │   ├── agents/              # investigation, compliance, summarization agents
@@ -184,7 +184,7 @@ finintel_sentinel_ai/
 ├── notebooks/
 ├── tests/
 └── README.md
-
+```
 ---
 
 ## Status
