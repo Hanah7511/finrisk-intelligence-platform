@@ -16,11 +16,11 @@ This platform is built to detect financial crime at scale and investigate suspic
 ---
 
 ## Architecture
-
+```
 finrisk-intelligence-platform/
 ├── finrisk_detection_engine/     ⚙ AML Detection Pipeline
 └── finintel_sentinel_ai/         🤖 Multi-Agent Investigation System
-
+```
 ### ⚙ finrisk_detection_engine
 Multi-layer AML detection pipeline:
 - Rule-based detection (structuring, sanctions, velocity, geo-risk)
@@ -58,7 +58,7 @@ SQL Ingest → Validate → Preprocess → Features → Rules → Stat ML → XG
 ---
 
 ## Repo Structure
-
+```
 finrisk-intelligence-platform/
 ├── shared/
 │   ├── schemas/
@@ -85,7 +85,7 @@ finrisk-intelligence-platform/
 ├── docs/
 ├── docker-compose.yml
 └── README.md
-
+```
 ---
 
 ## Status
