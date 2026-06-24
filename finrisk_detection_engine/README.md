@@ -18,7 +18,7 @@ The `finrisk_detection_engine` is the detection backbone of the Financial Risk I
 ---
 
 ## Detection Pipeline
-
+```
 MULTI-SOURCE DATA LAYER
 (Banking Transactions + Customer Data + Device Data + KYC Records + Regulatory Documents)
     ↓
@@ -65,9 +65,9 @@ CASE MANAGEMENT & HUMAN FEEDBACK LOOP
 (Analyst Validation + False Positive Review + Investigator Notes + Audit Logging)
     ↓
 → Alerts passed to FinIntel Sentinel AI for investigation
-
+```
 ---
-
+```
 │   ├── rules/               # rule-based AML engine
 │   ├── statistical/         # Z-score, IQR, MAD detectors
 │   ├── unsupervised/        # Isolation Forest, LOF, One-Class SVM
@@ -78,7 +78,7 @@ CASE MANAGEMENT & HUMAN FEEDBACK LOOP
 │   └── api/                 # FastAPI scoring endpoint
 ├── configs/
 └── main.py
-
+```
 ---
 
 ## Status
