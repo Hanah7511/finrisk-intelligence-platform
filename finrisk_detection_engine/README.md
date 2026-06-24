@@ -1,6 +1,7 @@
+
 # FinRisk Detection Engine
 
-> Multi-layer AML detection pipeline combining rule-based engines, statistical anomaly detection, ensemble ML, and Graph Neural Networks for real-time financial crime scoring.
+> Multi-layer AML detection pipeline combining rule-based engines, statistical anomaly detection, ensemble ML, Graph Neural Networks, and supervised fraud classification for real-time financial crime scoring.
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
@@ -18,51 +19,62 @@ The `finrisk_detection_engine` is the detection backbone of the Financial Risk I
 
 ## Detection Pipeline
 
-SQL Ingest → Validate → Preprocess → Feature Engineering
-    │
-    ▼
-Rule-Based Engine     ──→  structuring, sanctions, velocity, geo-risk
-    │
-    ▼
-Statistical Detection ──→  Z-score, IQR, MAD anomaly detection
-    │
-    ▼
-Ensemble ML           ──→  Isolation Forest, XGBoost, Random Forest
-    │
-    ▼
-GNN Layer             ──→  GraphSAGE fraud ring detection
-    │
-    ▼
-Risk Fusion Engine    ──→  combines all signals into a unified risk score
-    │
-    ▼
-Alert → SAR Report
+MULTI-SOURCE DATA LAYER
+(Banking Transactions + Customer Data + Device Data + KYC Records + Regulatory Documents)
+    ↓
+DATA INGESTION LAYER
+(CSV + SQL Server + APIs + Kafka Streaming)
+    ↓
+DATA VALIDATION LAYER
+(Missing Values + Schema Validation + Duplicate Checks + Type Validation)
+    ↓
+DATA PREPROCESSING LAYER
+(Cleaning + Encoding + Scaling + Timestamp Processing + Feature Normalization)
+    ↓
+SQL ANALYTICS & HISTORICAL FEATURE LAYER
+(Transaction Aggregation + Behavioral History + Velocity Metrics + Device Intelligence)
+    ↓
+FEATURE ENGINEERING LAYER
+(SQL Behavioral Features + Python ML Features + Velocity Features + Risk Indicators)
+    ↓
+RULE-BASED AML ENGINE
+(Structuring Rules + Sanctions Flags + Geo-Risk Rules + Velocity Rules + Threshold Rules)
+    ↓
+STATISTICAL ANOMALY DETECTION LAYER
+(Z-Score + IQR + MAD + Percentile-Based Detection)
+    ↓
+UNSUPERVISED & HYBRID ML ANOMALY DETECTION LAYER
+(Isolation Forest + LOF + One-Class SVM + Ensemble Anomaly Scoring)
+    ↓
+SUPERVISED FRAUD CLASSIFICATION LAYER
+(Logistic Regression + Random Forest + XGBoost)
+    ↓
+RISK FUSION ENGINE
+(Combines Statistical + Rule-Based + ML + Behavioral Risk Scores)
+    ↓
+GRAPH ML FEATURE LAYER
+(Customer Relationships + Shared Devices + Transaction Networks + Suspicious Connection Mapping)
+    ↓
+GNN FRAUD RING DETECTION LAYER
+(GraphSAGE for Fraud Ring & Network Fraud Detection)
+    ↓
+ALERT SEVERITY ENGINE
+(Low / Medium / High / Critical Risk Prioritization)
+    ↓
+CASE MANAGEMENT & HUMAN FEEDBACK LOOP
+(Analyst Validation + False Positive Review + Investigator Notes + Audit Logging)
+    ↓
+→ Alerts passed to FinIntel Sentinel AI for investigation
 
 ---
 
-## Tech Stack
-
-| Layer | Technologies |
-|---|---|
-| ML & Deep Learning | Python, XGBoost, PyTorch, GraphSAGE, NetworkX, Scikit-learn |
-| API & Serving | FastAPI |
-| Experiment Tracking | MLflow |
-| Infrastructure | Docker, GitHub Actions |
-| Data | SQL Server, Pandas |
-
----
-
-## Folder Structure
-
-finrisk_detection_engine/
-├── src/
-│   ├── ingestion/           # SQL data ingestion
-│   ├── preprocessing/       # validation and feature engineering
-│   ├── rules/               # rule-based detection engine
+│   ├── rules/               # rule-based AML engine
 │   ├── statistical/         # Z-score, IQR, MAD detectors
-│   ├── ml_models/           # Isolation Forest, XGBoost, RF
-│   ├── gnn/                 # GraphSAGE fraud ring detection
+│   ├── unsupervised/        # Isolation Forest, LOF, One-Class SVM
+│   ├── supervised/          # Logistic Regression, Random Forest, XGBoost
 │   ├── fusion/              # risk signal fusion engine
+│   ├── gnn/                 # GraphSAGE fraud ring detection
+│   ├── alerts/              # severity engine and case management
 │   └── api/                 # FastAPI scoring endpoint
 ├── configs/
 └── main.py
@@ -73,11 +85,15 @@ finrisk_detection_engine/
 
 | Component | Status |
 |---|---|
+| Data Ingestion & Validation | In Progress |
+| Feature Engineering | In Progress |
 | Rule-Based Engine | In Progress |
 | Statistical Detection | In Progress |
-| Ensemble ML | In Progress |
-| GNN (GraphSAGE) | In Progress |
-| Risk Fusion | In Progress |
+| Unsupervised ML | In Progress |
+| Supervised Classification | In Progress |
+| Risk Fusion Engine | In Progress |
+| GNN Fraud Ring Detection | In Progress |
+| Alert Severity Engine | In Progress |
 | FastAPI Scoring API | In Progress |
 
 ---
