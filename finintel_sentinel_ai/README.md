@@ -38,10 +38,10 @@ SAR Report Output
 
 ## RAG Pipeline
 
-- Regulatory documents loaded from FATF, FinCEN, internal policies
-- Chunked and embedded using Sentence Transformers
-- Stored in FAISS (fast similarity search) and ChromaDB (persistent store)
-- Retrieved context passed to agents for grounded reasoning
+- Regulatory documents loaded from FATF, FinCEN, internal policies.
+- Chunked and embedded using Sentence Transformers.
+- Stored in FAISS (fast similarity search) and ChromaDB (persistent store).
+- Retrieved context passed to agents for grounded reasoning.
 
 ---
 
