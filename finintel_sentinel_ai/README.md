@@ -6,7 +6,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-purple)
 
-Part of the [Financial Risk Intelligence Platform](../README.md)
+Part of the [Financial Risk Intelligence Platform](../README.md).
 
 ---
 
