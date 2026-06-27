@@ -23,19 +23,19 @@ finrisk-intelligence-platform/
 ```
 ### ⚙ finrisk_detection_engine
 Multi-layer AML detection pipeline:
-- Rule-based detection (structuring, sanctions, velocity, geo-risk)
-- Statistical anomaly detection — Z-score, IQR, MAD
-- Ensemble ML — Isolation Forest, XGBoost, Random Forest
-- GraphSAGE GNN for fraud ring detection
-- Risk fusion engine combining all signals
-- Real-time FastAPI scoring API with MLflow tracking and Docker deployment
+- Rule-based detection (structuring, sanctions, velocity, geo-risk).
+- Statistical anomaly detection — Z-score, IQR, MAD.
+- Ensemble ML — Isolation Forest, XGBoost, Random Forest.
+- GraphSAGE GNN for fraud ring detection.
+- Risk fusion engine combining all signals.
+- Real-time FastAPI scoring API with MLflow tracking and Docker deployment.
 
 ### 🤖 finintel_sentinel_ai
 LangGraph multi-agent investigation system:
-- Investigation Agent, Compliance Agent, Summarization Agent
-- RAG pipeline over FATF and FinCEN regulatory documents
-- Vector stores: FAISS + ChromaDB
-- Confidence scoring and automated SAR report generation
+- Investigation Agent, Compliance Agent, Summarization Agent.
+- RAG pipeline over FATF and FinCEN regulatory documents.
+- Vector stores: FAISS + ChromaDB.
+- Confidence scoring and automated SAR report generation.
 
 ---
 
